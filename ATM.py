@@ -140,7 +140,7 @@ def delete_digit():
     :return: delete digit
     '''
     try:
-        value = str(entry_pin.get())[:len(str(entry_pin.get())) - 1]
+        value = str(entry.get())[:len(str(entry.get())) - 1]
         entry.delete(0, END)
         entry.insert(0, value)
     except:
